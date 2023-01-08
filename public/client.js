@@ -10,6 +10,9 @@ textarea.addEventListener('keyup', (e) => {
     if (e.key === 'Enter') {
         sendMessage(e.target.value)
     }
+     btn.onclick = function () {
+    sendMessage(e.target.value);
+  };
 })
 
 function sendMessage(message) {
